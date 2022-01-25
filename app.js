@@ -11,9 +11,11 @@ const button3 = document.getElementById('shell3_Button');
 const winsSpan = document.getElementById('wins');
 const lossesSpan = document.getElementById('losses');
 const totalSpan = document.getElementById('total');
+const percent = document.getElementById('percent');
 
 let wins = 0;
 let total = 0;
+
 
 function resetStyle() {
     ball1.classList.remove('reveal');
@@ -25,6 +27,8 @@ function displayResults() {
     winsSpan.textContent = wins;
     totalSpan.textContent = total;
     lossesSpan.textContent = total - wins;
+    percent.textContent = Math.round((wins / total) * 100) + '%';
+    console.log(percent);
 }
 
 button1.addEventListener('click', () => {
