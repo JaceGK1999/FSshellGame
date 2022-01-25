@@ -28,7 +28,6 @@ function displayResults() {
     totalSpan.textContent = total;
     lossesSpan.textContent = total - wins;
     percent.textContent = Math.round((wins / total) * 100) + '%';
-    console.log(percent);
 }
 
 button1.addEventListener('click', () => {
