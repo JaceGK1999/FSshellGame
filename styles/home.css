@@ -27,3 +27,6 @@
 h2 {
     color: yellowgreen;
 }
+button {
+    color: var(--color1);
+}
