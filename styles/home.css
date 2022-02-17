@@ -1,1 +1,32 @@
 /* add home page styles here */
+
+.shells {
+    display: flex;
+    flex-direction: row;
+}
+
+.shell {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.shell img {
+    width: 100%;
+}
+
+.ball.reveal {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    background-color: red;
+    border-radius: 75%;
+}
+h2 {
+    color: yellowgreen;
+}
+button {
+    color: var(--color1);
+}
